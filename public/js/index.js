@@ -11,10 +11,14 @@
   var toggleOdd = true;
   const btmMul = 5;
   const leftMul = 30;
+
   //const perfectTime = new Date("December 6,2017 00:00:00");
   var perfectTime = new Date();
   var perfectTime = new Date();
   perfectTime = new Date(perfectTime.getTime() + (7 * 1000));
+  const lovelyMessageSpeed = 250;
+  const lovelyMessage = "Happy Birthday Girl !!! \n  Stay Happy And God Bless You !!!";
+  var lovelyMessageIt = 0;
 
   function handleCounter() {
     const parsedDate = Date.parse(perfectTime) - Date.now();
@@ -337,8 +341,23 @@
     stopUpdater = setInterval(handleCounter, 1000);
   }
 
+  function writer() {
+    if (lovelyMessageIt == lovelyMessage.length) {
+      clearInterval(clearMessage);
+    }
+    $('.message').html($('.message').html() + lovelyMessage.charAt(lovelyMessageIt));
+    lovelyMessageIt++;
+  }
+
+  function writeMessage() {
+    $('.text').fadeOut("slow", function() {
+      var clearMessage = setInterval(writer, lovelyMessageSpeed);
+    });
+  }
+
   function init() {
     updater();
+    $('.text').click(writeMessage);
   }
   init();
 })();

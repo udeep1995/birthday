@@ -32,18 +32,30 @@ body{
 	padding-top: 5px;
 	font-size: 16px;
 }
+.wrapper{
+	position: fixed;
+}
 .banner{
     margin-top:5%;
+		float: left;
 }
 .ballons{
   margin-top:0%;
-  position:relative;
 }
 .cake{
   margin-top: 2%;
 }
 .container{
 	display: none;
+}
+.text{
+	position: relative;
+	margin: 5%;
+}
+.message{
+	text-align: center;
+	font-family: sans-serif;
+
 }
 @-moz-keyframes rotateEvenbox /*--for firefox--*/{
 
