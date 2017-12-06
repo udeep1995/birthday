@@ -11,7 +11,10 @@
   var toggleOdd = true;
   const btmMul = 5;
   const leftMul = 30;
-  const perfectTime = new Date("December 5, 2017 22:28:00");
+  //const perfectTime = new Date("December 6,2017 00:00:00");
+  var perfectTime = new Date();
+  var perfectTime = new Date();
+  perfectTime = new Date(perfectTime.getTime() + (7 * 1000));
 
   function handleCounter() {
     const parsedDate = Date.parse(perfectTime) - Date.now();
