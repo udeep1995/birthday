@@ -1,0 +1,125 @@
+body{
+	text-align: center;
+	background: #FFF;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+#counter{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+  margin-top:10%;
+}
+
+#counter > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#counter div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+.banner{
+    margin-top:5%;
+}
+.ballons{
+  margin-top:0%;
+  position:relative;
+}
+.cake{
+  margin-top: 2%;
+}
+.container{
+	display: none;
+}
+@-moz-keyframes rotateEvenbox /*--for firefox--*/{
+
+  	from{
+        -moz-transform:rotate(0deg);
+    }
+    to{
+        -moz-transform:rotate(10deg);
+    }
+
+}
+
+@-webkit-keyframes rotateEvenbox /*--for webkit--*/{
+
+    from{
+        -webkit-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(10deg);
+    }
+	}
+	@-moz-keyframes rotateOddbox /*--for firefox--*/{
+
+	  	from{
+	        -moz-transform:rotate(0deg);
+	    }
+	    to{
+	        -moz-transform:rotate(-10deg);
+	    }
+
+	}
+
+	@-webkit-keyframes rotateOddbox /*--for webkit--*/{
+
+	    from{
+	        -webkit-transform:rotate(0deg);
+	    }
+	    to{
+	        -webkit-transform:rotate(-10deg);
+	    }
+		}
+@-moz-keyframes rotatebox /*--for firefox--*/{
+
+  	from{
+        -moz-transform:rotate(-10deg);
+    }
+    to{
+        -moz-transform:rotate(10deg);
+    }
+}
+
+@-webkit-keyframes rotatebox /*--for webkit--*/{
+
+    from{
+        -webkit-transform:rotate(-10deg);
+    }
+    to{
+        -webkit-transform:rotate(10deg);
+    }
+	}
+	@-moz-keyframes rotateInversebox /*--for firefox--*/{
+
+			from{
+					-moz-transform:rotate(10deg);
+			}
+			to{
+					-moz-transform:rotate(-10deg);
+			}
+
+	}
+
+	@-webkit-keyframes rotateInversebox /*--for webkit--*/{
+
+			from{
+					-webkit-transform:rotate(10deg);
+			}
+			to{
+					-webkit-transform:rotate(-10deg);
+}
