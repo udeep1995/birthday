@@ -4,6 +4,9 @@ body{
   font-family: sans-serif;
   font-weight: 100;
 }
+#wrapper{
+	display: none;
+}
 #counter{
 	font-family: sans-serif;
 	color: #fff;
@@ -47,9 +50,11 @@ body{
   margin-top: 2%;
 }
 .container{
+	z-index: 1;
 	display: none;
 }
 .text{
+	z-index:1;
 	position: relative;
 	margin: 5%;
 }

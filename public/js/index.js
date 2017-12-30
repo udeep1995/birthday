@@ -17,7 +17,7 @@
   var perfectTime = new Date();
   perfectTime = new Date(perfectTime.getTime() + (7 * 1000));
   const lovelyMessageSpeed = 250;
-  const lovelyMessage = "Happy Birthday Girl !!! \n  Stay Happy And God Bless You !!!";
+  const lovelyMessage = "Happy Birthday YUVI!!! God Bless You !!! Enjoy AND Party :)";
   var lovelyMessageIt = 0;
 
   function handleCounter() {
@@ -32,6 +32,9 @@
       if (parseInt(seconds, 10) <= 0) {
         $counter.fadeOut("slow", wishBirthday);
         clearInterval(stopUpdater);
+        $('#wrapper').css({
+          "display":"block"
+        })
       } else {
         $days.html(days);
         $hours.html(hours);
